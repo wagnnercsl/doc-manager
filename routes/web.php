@@ -25,3 +25,6 @@ Route::any('/{any}', [AngularController::class, 'index'])
 // Route::get('/category', [CategoryController::class, 'index']);
 // Route::get('/category',function(){
 // });
+Route::get('/assets/angular/browser/{any}', function () {
+    return File::get(public_path() . '/assets/angular/browser/index.html');
+})->where('any', '.*');

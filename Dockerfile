@@ -49,7 +49,7 @@ RUN chmod +x /start.sh
 # Expose ports for both Laravel and Angular
 
 # CMD php artisan serve --host=0.0.0.0 --port=8181
-EXPOSE 4200
+EXPOSE 8000
 
 # # Start both services using the shell script
 CMD ["/start.sh"]
